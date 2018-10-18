@@ -2,3 +2,4 @@
 db.sqlite3
 */__pycache__/
 BMS/settings.py
+media/
