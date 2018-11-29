@@ -360,6 +360,7 @@ class SubProjectAdmin(ImportExportActionModelAdmin, NotificationMixin):
                 contract_income = contract_income
             else:
                 contract_income = fm_invoice.income + contract_income
+        # TODO 进过和商务方华琦沟通去掉到款70%的判段，不做限制，改为人为操作。
         # if project_amount * Decimal(0.7) > (contract_income-obj.contract.use_amount):
         #     obj.status = True
         # else:
@@ -412,6 +413,7 @@ class SubProjectAdmin(ImportExportActionModelAdmin, NotificationMixin):
                         contract_income = contract_income
                     else:
                         contract_income = fm_invoice.income + contract_income
+                # TODO 进过和商务方华琦沟通去掉到款70%的判段，不做限制，改为人为操作。
                 # if project_amount * Decimal(0.7) > (contract_income - obj.contract.use_amount):
                 #     obj.status = True
                 # else:

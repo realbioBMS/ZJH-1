@@ -454,7 +454,7 @@ class SampleInfoFormAdmin(ImportExportActionModelAdmin,NotificationMixin):
         except:
             # print(actions)
             return None
-        if current_group_set.name == "合作伙伴":
+        if current_group_set[0].name == "合作伙伴":
             # del actions['export_admin_action']
             return actions
         else:
